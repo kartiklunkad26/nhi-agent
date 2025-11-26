@@ -14,7 +14,6 @@ export const UserSelector = () => {
   return (
     <div className="flex items-center gap-3 px-4 py-2 bg-secondary/30 rounded-lg border border-border/50">
       <User className="h-4 w-4 text-muted-foreground" />
-      <span className="text-sm font-medium text-muted-foreground">Logged in as:</span>
       <Select value={currentUser || ""} onValueChange={setCurrentUser}>
         <SelectTrigger className="w-[200px] h-8 text-sm border-border/50 bg-background/50">
           <SelectValue placeholder="Select IAM user" />
